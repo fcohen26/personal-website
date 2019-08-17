@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Merienda+One&display=swap" rel="stylesheet">   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
+  <!-- <body>
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -56,24 +56,39 @@
         </nav>
 
       </div>
-    </div>
+    </div> -->
+
+    <section class="et-hero-tabs">
+        <!-- <h1>STICKY SLIDER NAV</h1>
+        <h3>Sliding content with sticky tab nav</h3> -->
+        <div id="header-div">
+          <img class = "landing-image" src="assets/img/me.jpg">
+          <div class="carousel-caption">
+            <h1 id="title-text">Hello & Welcome :)</h1>
+          </div>
+
+        </div>
+        <div class="et-hero-tabs-container">
+          <a class="et-hero-tab" href="#about">About</a>
+          <a class="et-hero-tab" href="#experience">Experience</a>
+          <a class="et-hero-tab" href="#projects">Projects</a>
+          <a class="et-hero-tab" href="#contact">Contact</a>
+          <span class="et-hero-tab-slider"></span>
+        </div>
+      </section>
 
 
     <!-- Carousel
     ================================================== -->
-    <div id="header-div" class="carousel slide" data-ride="carousel">
-      <!-- <div class="carousel-inner" role="listbox"> -->
-        <!-- <div class="item active"> -->
-          <!-- <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide"> -->
-          <!-- <div class="container"> -->
-            <!-- <div id="landing-image" src="assets/img/me.jpg"></div> -->
+
+    
+    <!-- <div id="header-div" class="carousel slide" data-ride="carousel">
             <img class = "landing-image" src="assets/img/me.jpg">
             <div class="carousel-caption">
               <h1 id="title-text">Hello & Welcome :)</h1>
             </div>
-          <!-- </div> -->
-    </div><!-- /.carousel -->
-    <hr class="featurette-divider">
+    </div>
+    <hr class="featurette-divider"> -->
 
 
     <!-- Marketing messaging and featurettes
@@ -83,7 +98,7 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div name="about" class="section-title">
+      <div id="about" class="section">
         <!-- <div class="col-lg-4"> -->
           <!-- <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"> -->
           <div>
@@ -110,78 +125,81 @@
 
 
       <!-- START THE FEATURETTES -->
-      <hr class="featurette-divider">
-      <h2 class="section-title"><a name="experience">Experience</a></h2>
-      <div class="wrapper">
-            <div class="cols">
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="container">
-                              <div class="front" style="background-image: url(assets/img/seattle.jpg)">
-                                  <div class="inner">
-                                      <p>Microsoft</p>
-                        <span>Seattle, WA</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                    <p>I had the opportunity to intern at Microsoft in the summer of 2019. As a developer on the Omnichannel team within Dynamics365, I got the opportunity to work with my team of engineers in developing a customer service end-to-end chat solution. Specifically, I built a web API to expose feature control bits and implemented desktop notifications for the chat portal run from the browser.</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="container">
-                              <div class="front" style="background-image: url(assets/img/newyork.jpg)">
-                                  <div class="inner">
-                                      <p>Pivotal Software</p>
-                        <span>New York, NY</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                      <p>In January-March 2019, I had the awesome experience of interning at Pivotal Software, a cloud-computing company that maintains a cloud-agnostic software-as-a-service. As a member of the Credhub team, I helped in the teams mission as the credential manager for the platform, participating in daily pair programming work. In my time there, I contributed to tracks of work such as integrating the Luna HSM as an external encryption provider and maintaining the Credhub Command Line Interface.</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="container">
-                              <div class="front" style="background-image: url(assets/img/dartmouth.jpg)">
-                                  <div class="inner">
-                                      <p>Teaching Assistant</p>
-                        <span>Dartmouth College</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col" ontouchstart="this.classList.toggle('hover');">
-                          <div class="container">
-                              <div class="front" style="background-image: url(assets/img/budapest.jpg)">
-                                  <div class="inner">
-                                      <p>Aquincum Institute of Technology</p>
-                        <span>Budapest, Hungary</span>
-                                  </div>
-                              </div>
-                              <div class="back">
-                                  <div class="inner">
-                                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-           </div>
+      <div class="section">
+        <hr class="featurette-divider">
+        <h2 class="section-title"><a id="experience">Experience</a></h2>
+        <div class="wrapper">
+              <div class="cols">
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(assets/img/seattle.jpg)">
+                                    <div class="inner">
+                                        <p>Microsoft</p>
+                          <span>Seattle, WA</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                      <p>I had the opportunity to intern at Microsoft in the summer of 2019. As a developer on the Omnichannel team within Dynamics365, I got the opportunity to work with my team of engineers in developing a customer service end-to-end chat solution. Specifically, I built a web API to expose feature control bits and implemented desktop notifications for the chat portal run from the browser.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(assets/img/newyork.jpg)">
+                                    <div class="inner">
+                                        <p>Pivotal Software</p>
+                          <span>New York, NY</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>In January-March 2019, I had the awesome experience of interning at Pivotal Software, a cloud-computing company that maintains a cloud-agnostic software-as-a-service. As a member of the Credhub team, I helped in the teams mission as the credential manager for the platform, participating in daily pair programming work. In my time there, I contributed to tracks of work such as integrating the Luna HSM as an external encryption provider and maintaining/developing the Credhub Command Line Interface.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(assets/img/dartmouth.jpg)">
+                                    <div class="inner">
+                                        <p>Teaching Assistant</p>
+                          <span>Dartmouth College</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>As a Teaching Assistant for Dartmouth's introductory Computer Science course this fall, I work alongside the staff of TA's and the professor to grade all homework assignments and exams as well as teach weekly sessions in smaller groups to reinforce class material. These sessions consist of both lecture and practical exercises. I also more generally provide any support and personalized help that the students in the class need.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(assets/img/budapest.jpg)">
+                                    <div class="inner">
+                                        <p>Aquincum Institute of Technology</p>
+                          <span>Budapest, Hungary</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>In the Fall of 2018, I was lucky enough to have the opportunity to spend a semester studying abroad in Budapest, Hungary at the Aquincum Institute of Technology. Beyond exploring the wonderful city and getting to know Hungarian culture, I took coursework in Cryptography, Graphics, Algorithms/Data Structures, and Mobile Software Development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+
+      </div>
 
       <!-- /END THE FEATURETTES -->
       <hr class="featurette-divider">
 
-      <div id="Projects">
-            <h2 class="section-title"><a name="projects">Projects</a></h2>
+      <div id="Projects" class="section">
+            <h2 class="section-title"><a id="projects">Projects</a></h2>
             <div class="wrapper">
                     <div class="cols">
                               <div class="col" ontouchstart="this.classList.toggle('hover');">
@@ -194,7 +212,7 @@
                                       </div>
                                       <div class="back">
                                           <div class="inner">
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                            <p>During my internship at Microsoft, I was tasked with building an API to expose Feature Control Bits, which are our means of turning on/off particular features of the Omnichannel Solution. The project involved working with all levels of the stack: adding a new service that made calls to the Cosmos Database (running Gremlin queries to find the appropriate FCB's), exposing listeners and controllers, and modifying the front-end to make the appropriate calls to the new API and handle the feedback appropriately. </p>
                                           </div>
                                       </div>
                                   </div>
@@ -209,7 +227,7 @@
                                       </div>
                                       <div class="back">
                                           <div class="inner">
-                                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                              <p>In my time at Microsoft, I had the opportunity to design/implement a brand new feature for the Omnichannel end-to-end chat. I explored, researched and implemented desktop notifications sent from the browser each time agents received an incoming chat request (to alleviate the common issue of agents missing notifications that only appeared within the browser tab in which they were running Omnichannel). Sending notifications from the browser to the desktop involved making use of the Web Notifications API as well as implementing a Service Worker, a powerful tool that enables a script to be run in the background outside of the main thread, and acts as a proxy between the browser and the network, allowing for capabilities (such as desktop notifications) that are primarily only available in native applications. </p>
                                           </div>
                                       </div>
                                   </div>
@@ -224,7 +242,7 @@
                                       </div>
                                       <div class="back">
                                           <div class="inner">
-                                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                              <p>I got the special opportunity to participate in a particularly exciting Hackathon project during my internship at Microsoft. The project explored the potential to integrate American Sign Language recognition as a means of communicating with Cortana (Microsoft's voice recognition product), with the hopes of improving the accessibility of the Cortana device. I was proud to see the success of my team's vision and the excitement about it that came from all levels of Microsoft's employee base, including a personal visit to our team from Microsoft CEO Satya Nadella to hear about the work firsthand. </p>
                                           </div>
                                       </div>
                                   </div>
@@ -249,8 +267,8 @@
       </div>
       <hr class="featurette-divider">
 
-      <div id="Contact">
-            <h2 class="section-title"><a name="contact">Contact</a></h2>
+      <div id="Contact" class="section">
+            <h2 class="section-title"><a id="contact">Contact</a></h2>
             <div id="contact-icons">
               <a class="contact-icon" href="https://github.com/fcohen26"> <i class="fab fa-github fa-4x"></i></a>
               <a class="contact-icon" href="https://www.linkedin.com/in/frances-cohen-912bb9164"> <i class="fab fa-linkedin fa-4x"></i></a>
@@ -273,6 +291,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="assets/js/main.js"></script>
+
   </body>
 </html>

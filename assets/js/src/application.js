@@ -11,7 +11,7 @@
 
 /* global ZeroClipboard, anchors */
 
-!function ($) {
+!(function ($) {
   'use strict';
 
   $(function () {
@@ -173,11 +173,10 @@
 
   })
 
-}(jQuery)
-
-;(function () {
+}(jQuery));
+(function () {
   'use strict';
 
   anchors.options.placement = 'left';
-  anchors.add('.bs-docs-section > h1, .bs-docs-section > h2, .bs-docs-section > h3, .bs-docs-section > h4, .bs-docs-section > h5')
-})();
+  anchors.add('.bs-docs-section > h1, .bs-docs-section > h2, .bs-docs-section > h3, .bs-docs-section > h4, .bs-docs-section > h5');
+}());
