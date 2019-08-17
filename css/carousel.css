@@ -442,7 +442,7 @@ h1{
     margin: 0 0 2rem 0;
   }
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 768px) {
   .landing-image {
     margin-top: 90px;
     /* margin-bottom: 90px; */
@@ -459,12 +459,9 @@ h1{
     margin-bottom: 20px;
   }
 }
-/* @media screen and (max-width: 32rem) {
+@media screen and (max-width: 32rem) {
   .landing-image {
     margin-top: 90px;
-    /* margin-bottom: 90px; */
-    /* position: center; */
-    /* background-image: url("assets/img/me.jpg"); */
     height: 300px;
     width: 250px;
     z-index: 10;
@@ -475,11 +472,7 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /* .col{
-    width: 100%;
-    margin: 0 0 2rem 0;
-  } */
-} */
+}
 
 
 
