@@ -13,6 +13,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/99616f039e.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -58,7 +61,7 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="header-div" class="carousel slide" data-ride="carousel">
       <!-- <div class="carousel-inner" role="listbox"> -->
         <!-- <div class="item active"> -->
           <!-- <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide"> -->
@@ -82,10 +85,10 @@
       <!-- Three columns of text below the carousel -->
       <div name="about" class="section-title">
         <!-- <div class="col-lg-4"> -->
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <!-- <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"> -->
           <div>
-                <h2><a name="about">About</a></h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <h2><a name="about" class="section-title">About</a></h2>
+                <p>Hi!! My name is Frances, and I'm an aspiring software engineer born and raised in New York City. I'm a senior at Dartmouth College, and I can't wait for all the adventures in the years to come... </p>
           </div>
           <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
         <!-- </div>/.col-lg-4 -->
@@ -121,7 +124,7 @@
                               </div>
                               <div class="back">
                                   <div class="inner">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                    <p>I had the opportunity to intern at Microsoft in the summer of 2019. As a developer on the Omnichannel team within Dynamics365, I got the opportunity to work with my team of engineers in developing a customer service end-to-end chat solution. Specifically, I built a web API to expose feature control bits and implemented desktop notifications for the chat portal run from the browser.</p>
                                   </div>
                               </div>
                           </div>
@@ -136,7 +139,7 @@
                               </div>
                               <div class="back">
                                   <div class="inner">
-                                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                      <p>In January-March 2019, I had the awesome experience of interning at Pivotal Software, a cloud-computing company that maintains a cloud-agnostic software-as-a-service. As a member of the Credhub team, I helped in the teams mission as the credential manager for the platform, participating in daily pair programming work. In my time there, I contributed to tracks of work such as integrating the Luna HSM as an external encryption provider and maintaining the Credhub Command Line Interface.</p>
                                   </div>
                               </div>
                           </div>
@@ -213,6 +216,21 @@
                               </div>
                               <div class="col" ontouchstart="this.classList.toggle('hover');">
                                   <div class="container">
+                                      <div class="front" style="background-image: url(assets/img/project4.jpg)">
+                                          <div class="inner">
+                                              <p>ASL Hack for Cortana</p>
+                                <span>Microsoft Hackathon</span>
+                                          </div>
+                                      </div>
+                                      <div class="back">
+                                          <div class="inner">
+                                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                  <div class="container">
                                       <div class="front" style="background-image: url(assets/img/project3.jpg)">
                                           <div class="inner">
                                               <p>Tiny Search Engine</p>
@@ -233,6 +251,12 @@
 
       <div id="Contact">
             <h2 class="section-title"><a name="contact">Contact</a></h2>
+            <div id="contact-icons">
+              <a class="contact-icon" href="https://github.com/fcohen26"> <i class="fab fa-github fa-4x"></i></a>
+              <a class="contact-icon" href="https://www.linkedin.com/in/frances-cohen-912bb9164"> <i class="fab fa-linkedin fa-4x"></i></a>
+              <a id="resume-icon" class="contact-icon" href="assets/FrancesCohenResume.pdf">Resume</a>
+
+            </div>
       </div>
 
       <!-- FOOTER -->

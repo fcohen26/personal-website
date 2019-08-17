@@ -51,10 +51,17 @@ body {
   font-size:900px;
   color: white;
 } */
-#landing-image {
-  background-image: url("assets/img/me.jpg");
-  height: 20px;
-  width: 20px;
+#header-div {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.landing-image {
+  margin-top: 90px;
+  /* position: center; */
+  /* background-image: url("assets/img/me.jpg"); */
+  height: 400px;
+  width: 400px;
   z-index: 10;
 }
 #title-text {
@@ -295,6 +302,24 @@ h1{
   font-weight: 300;
 }
 
+#contact-icons {
+  display: flex;
+  justify-content: center;
+  /* align-items: space-between; */
+  /* margin-right: 100px; */
+}
+.contact-icon {
+  margin: 10px;
+}
+#resume-icon {
+  font-size: 35px;
+  border-radius: 25px;
+  border: 2px solid;
+  padding: 5px; 
+
+}
+
+
 @media screen and (max-width: 64rem){
   .col{
     width: calc(33.333333% - 2rem);
@@ -313,6 +338,8 @@ h1{
     margin: 0 0 2rem 0;
   }
 } */
+
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
