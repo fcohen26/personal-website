@@ -4,6 +4,7 @@
 
 body {
   font-family: "Century Gothic", 'Lato', sans-serif;
+  background-color: #E0E2DB;
 
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -132,7 +133,6 @@ a {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   height: 700px;
@@ -158,7 +158,7 @@ a {
   /* position: center; */
   /* background-image: url("assets/img/me.jpg"); */
   height: 400px;
-  width: 400px;
+  width: 350;
   z-index: 10;
 }
 #title-text {
@@ -206,13 +206,15 @@ a {
 }
 .section-title {
   text-align: center;
-  font-family: 'Luckiest Guy', cursive;  font-size: 50px;
+  font-family: 'Lora', serif; font-size: 50px;
+
+  /* font-family: 'Luckiest Guy', cursive;  font-size: 50px; */
   margin-bottom: 80px;
   text-decoration: none;
 }
 #about {
   text-align: center;
-  font-family: 'Luckiest Guy', cursive;  font-size: 50px;
+  font-family: 'Lora', serif; font-size: 50px;
   margin-bottom: 80px;
   text-decoration: none;
 }
@@ -321,14 +323,30 @@ h1{
             backface-visibility: hidden;
     border-radius: 10px;
 }
-.container:hover .front,
-.container:hover .back{
+@media screen and (min-width: 32rem){
+  .container:hover .front,
+  .container:hover .back{
     -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
+.container:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+}
+
 
 .back{
     position: absolute;
@@ -367,19 +385,6 @@ h1{
             transform-style: preserve-3d;
 }
 
-.container:hover .back{
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.container:hover .front{
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
 
 .front .inner p{
   font-size: 2rem;
@@ -441,6 +446,27 @@ h1{
     width: 100%;
     margin: 0 0 2rem 0;
   }
+  .container:active .front,
+  .container:active .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.container:active .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:active .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
 }
 @media only screen and (max-width: 768px) {
   /* .col{
@@ -453,7 +479,7 @@ h1{
     /* position: center; */
     /* background-image: url("assets/img/me.jpg"); */
     height: 300px;
-    width: 250px;
+    width: 200px;
     z-index: 10;
   }
   #title-text {
@@ -464,13 +490,16 @@ h1{
   }
   .section-title {
     text-align: center;
-    font-family: 'Luckiest Guy', cursive;  font-size: 30px;
+    font-family: 'Lora', serif; font-size: 30px;
+
+    /* font-family: 'Luckiest Guy', cursive;  font-size: 30px; */
     margin-bottom: 40px;
     text-decoration: none;
   }
   #about {
     text-align: center;
-    font-family: 'Luckiest Guy', cursive;  font-size: 30px;
+    font-family: 'Lora', serif; font-size: 30px;
+    /* font-family: 'Luckiest Guy', cursive;  font-size: 30px; */
     margin-bottom: 10px;
     text-decoration: none;
   }
@@ -478,15 +507,16 @@ h1{
 @media screen and (max-width: 32rem) {
   .landing-image {
     margin-top: 90px;
-    height: 300px;
-    width: 250px;
+    margin-bottom: 150px;
+    height: 325px;
+    width: 275px;
     z-index: 10;
   }
   #title-text {
     z-index: 10;
     font-size: 50px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
 
