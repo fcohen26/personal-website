@@ -430,11 +430,11 @@ h1{
   }
 } */
 
-@media screen and (max-width: 48rem){
+/* @media screen and (max-width: 48rem){
   .col{
     width: calc(50% - 2rem);
   }
-}
+} */
 
 @media screen and (max-width: 32rem){
   .col{
@@ -443,6 +443,10 @@ h1{
   }
 }
 @media only screen and (max-width: 768px) {
+  /* .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  } */
   .landing-image {
     margin-top: 90px;
     /* margin-bottom: 90px; */
@@ -460,13 +464,13 @@ h1{
   }
   .section-title {
     text-align: center;
-    font-family: 'Luckiest Guy', cursive;  font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;  font-size: 30px;
     margin-bottom: 40px;
     text-decoration: none;
   }
   #about {
     text-align: center;
-    font-family: 'Luckiest Guy', cursive;  font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;  font-size: 30px;
     margin-bottom: 10px;
     text-decoration: none;
   }
