@@ -40,7 +40,7 @@ a {
 }
 
 
-.et-hero-tabs {
+.section-tabs {
 
     display: flex;
     flex-direction: column;
@@ -51,29 +51,9 @@ a {
     background: #eee;
     text-align: center;
     padding: 0 2em;
-    
-    /* h1 {
-        font-size: 2rem;
-        margin: 0;
-        letter-spacing: 1rem;
-    }
-    h3 {
-        font-size: 1rem;
-        letter-spacing: 0.3rem;
-        opacity: 0.6;
-    } */
 }
-/* .et-hero-tabs, h1 {
-  font-size: 2rem;
-  margin: 0;
-  letter-spacing: 1rem;
-}
-.et-hero-tabs, h3 {
-  font-size: 1rem;
-  letter-spacing: 0.3rem;
-  opacity: 0.6;
-} */
-.et-hero-tabs-container {
+
+.section-tabs-container {
   /* font-size: 100px; */
 
   display: flex;
@@ -85,16 +65,12 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #fff;
   z-index: 10;
-  /* &--top {
-      position: fixed;
-      top: 0;
-  } */
 }
-.et-hero-tabs-container--top {
+.section-tabs-container--top {
   position: fixed;
   top: 0;
 }
-.et-hero-tab {
+.section-tab {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,19 +79,14 @@ a {
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
   font-size: 20px;
-  /* &:hover {
-    color:white;
-    background: rgba(102,177,241,0.8);
-    transition: all 0.5s ease;
-  } */
 }
-.et-hero-tab:hover {
+.section-tab:hover {
   color:white;
   background: rgba(102,177,241,0.8);
   transition: all 0.5s ease;
 }
 
-.et-hero-tab-slider {
+.section-tab-slider {
   position: absolute;
   bottom: 0;
   width: 0;
@@ -128,29 +99,28 @@ a {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
+.header-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
 .carousel {
   height: 700px;
-  /* margin-bottom: 70px;
-  background-color: black; */
   background-color: #E0E2DB;
 }
-/* Since positioning the image, we need to help out the caption */
-/* .carousel-caption {
-  z-index: -1;
-  text-align: center;
-  font-size:900px;
-  color: white;
-} */
 #header-div {
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
 }
 .landing-image {
-  /* margin-top: 90px; */
   margin-bottom: 90px;
-  /* position: center; */
-  /* background-image: url("assets/img/me.jpg"); */
   height: 400px;
   width: 350;
   z-index: 10;
@@ -164,20 +134,6 @@ a {
   margin-top: 20px;
 }
 
-/* Declare heights because of positioning of img element */
-/* .carousel .item {
-  height: 900px;
-  background-color: #777;
-} */
-/* .carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-} */
-
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -190,13 +146,6 @@ a {
 .img-circle {
   margin-right: 50px;
 }
-/* .marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-} */
 .row {
   display: flex;
   justify-content: stretch;
@@ -204,8 +153,6 @@ a {
 .section-title {
   text-align: center;
   font-family: 'Lora', serif; font-size: 50px;
-
-  /* font-family: 'Luckiest Guy', cursive;  font-size: 50px; */
   margin-bottom: 80px;
   text-decoration: none;
 }
@@ -218,10 +165,8 @@ a {
 a, a:hover {
   text-decoration: none !important;
 }
-/* Featurettes
-------------------------- */
 
-.featurette-divider {
+.section-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
@@ -231,12 +176,6 @@ a, a:hover {
   line-height: 1;
   letter-spacing: -1px;
 }
-/* *{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-} */
 
 h1{
   font-size: 2.5rem;
@@ -247,26 +186,7 @@ h1{
   margin: 2rem 0;
 }
 
-
-/* .wrapper{
-  width: 90%;
-  margin: 0 auto;
-  max-width: 80rem;
-} */
-
-/* .cols{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-} */
-
 .col{
-  /* width: 10px; */
   width: 100%;
   margin: 1rem;
   cursor: pointer;
@@ -408,16 +328,9 @@ font-weight: 300;
 
 }
 
-
-
-
-
-
 #contact-icons {
   display: flex;
   justify-content: center;
-  /* align-items: space-between; */
-  /* margin-right: 100px; */
 }
 .contact-icon {
   margin: 10px;
@@ -430,94 +343,23 @@ font-weight: 300;
 
 }
 
-
-/* @media screen and (max-width: 64rem){
-  .col{
-    width: calc(33.333333% - 2rem);
-  }
-} */
-
-/* @media screen and (max-width: 48rem){
-  .col{
-    width: calc(50% - 2rem);
-  }
-} */
-
 @media screen and (max-width: 32rem){
   .col{
     width: 100%;
     margin: 0 0 2rem 0;
   }
-  /* .container:active .front,
-  .container:active .back{
-    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-.container:active .back{
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
 
-.container:active .front{
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-} */
 .et-hero-tab {
   font-size: 10px;
-  /* &:hover {
-    color:white;
-    background: rgba(102,177,241,0.8);
-    transition: all 0.5s ease;
-  } */
 }
 }
 /* Mobile */
 @media only screen and (max-width: 768px) {
-  /* .container:active .front,
-  .container:active .back{
-    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-.container:active .back{
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.container:active .front{
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-} */
 .et-hero-tab {
   font-size: 10px;
-  /* &:hover {
-    color:white;
-    background: rgba(102,177,241,0.8);
-    transition: all 0.5s ease;
-  } */
 }
-  /* .col{
-    width: 100%;
-    margin: 0 0 2rem 0;
-  } */
   .landing-image {
     margin-top: 90px;
-    /* margin-bottom: 90px; */
-    /* position: center; */
-    /* background-image: url("assets/img/me.jpg"); */
     height: 300px;
     width: 200px;
     z-index: 10;
@@ -531,15 +373,12 @@ font-weight: 300;
   .section-title {
     text-align: center;
     font-family: 'Lora', serif; font-size: 30px;
-
-    /* font-family: 'Luckiest Guy', cursive;  font-size: 30px; */
     margin-bottom: 40px;
     text-decoration: none;
   }
   #about {
     text-align: center;
     font-family: 'Lora', serif; font-size: 30px;
-    /* font-family: 'Luckiest Guy', cursive;  font-size: 30px; */
     margin-bottom: 10px;
     text-decoration: none;
   }
@@ -579,7 +418,6 @@ font-weight: 300;
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
   }
@@ -592,13 +430,11 @@ font-weight: 300;
     padding-left: 0;
   }
 
-  /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
 
-  /* Bump up size of carousel content */
-  .carousel-caption p {
+  .header-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
