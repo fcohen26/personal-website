@@ -48,6 +48,7 @@ class StickyNavigation {
       const offsetTop = $(id).offset().top - self.tabContainerHeight;
       const offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
       if ($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+        console.log('HERE');
         newCurrentId = id;
         newCurrentTab = $(this);
       }
@@ -55,6 +56,8 @@ class StickyNavigation {
     if (this.currentId != newCurrentId || this.currentId === null) {
       this.currentId = newCurrentId;
       this.currentTab = newCurrentTab;
+      console.log(newCurrentTab);
+      // console.log(this.currentId);
       this.setSliderCss();
     }
   }
@@ -66,6 +69,7 @@ class StickyNavigation {
       width = this.currentTab.css('width');
       left = this.currentTab.offset().left;
     }
+    console.log(width);
     $('.et-hero-tab-slider').css('width', width);
     $('.et-hero-tab-slider').css('left', left);
   }

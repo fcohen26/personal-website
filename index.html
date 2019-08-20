@@ -29,10 +29,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     </head>
 
-    <section class="et-hero-tabs">
+    <section id="home" class="et-hero-tabs">
         <!-- <h1>STICKY SLIDER NAV</h1>
         <h3>Sliding content with sticky tab nav</h3> -->
-        <div id="home" class="section">
+        <div id="home-div" class="section">
 
           <div id="header-div">
             <img class = "landing-image" src="assets/img/me.jpg">
@@ -44,11 +44,11 @@
         </div>
         <div class="et-hero-tabs-container">
             <a class="et-hero-tab" href="#home">Home</a>
-          <a class="et-hero-tab" href="#about">About</a>
-          <a class="et-hero-tab" href="#experience">Experience</a>
-          <a class="et-hero-tab" href="#projects">Projects</a>
-          <a class="et-hero-tab" href="#contact">Contact</a>
-          <span class="et-hero-tab-slider"></span>
+            <a class="et-hero-tab" href="#about">About</a>
+            <a class="et-hero-tab" href="#experience">Experience</a>
+            <a class="et-hero-tab" href="#projects">Projects</a>
+            <a class="et-hero-tab" href="#contact">Contact</a>
+            <span class="et-hero-tab-slider"></span>
         </div>
       </section>
 
@@ -232,7 +232,7 @@
                                       </div>
                                       <div class="back">
                                           <div class="inner">
-                                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                              <p>In one of the most rewarding academic projects I've every undertaken, I implemented a search engine in C. The project consists of 3 primary parts. The "crawler" takes in a URL, page directory and integer indicating the depth of search desired and runs a breadth-first-search process to explore all the webpages linked from the seed URL onwards. The "indexer" then builds an index data structure from the page directory that the crawler outputs, using a hashtable to keep track of counts of each word on each page. Finally, the "querier" reads in queries from standard input ("and" and "or" sequences) and processes the queries by giving each page a "score" for how well it matches the query based on unions and intersections, and ranks the results accordingly.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -254,7 +254,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <!-- <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
       </footer>
 
     <!-- </div>/.container -->
